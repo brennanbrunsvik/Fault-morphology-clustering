@@ -1,4 +1,4 @@
-name: stats
+name: fault_morph
 dependencies:
   - python=3.7.1
   - numpy=1.15.4
@@ -12,3 +12,5 @@ dependencies:
   - pip:
     - okada_wrapper
     - pyproj
+
+# In order to make this virtual environment, run: conda env create -f environment.yml
