@@ -1,4 +1,7 @@
 name: fault_morph
+channels:
+- conda-forge
+- anaconda # haven't tested this
 dependencies:
   - python=3.7.1
   - numpy=1.15.4
@@ -6,11 +9,17 @@ dependencies:
   - scipy=1.1.0
   - matplotlib=3.0.2
   - plotly=3.7.0
+ # - chart-studio # new, but I had to install manually...
   - scikit-learn=0.20.1
-  - cython
+  #- cython
   - pip=18.1
+  - pyproj=1.9.6 # moved this to the anaconda section
+  - ipykernel # Mostly needed for Jupyter Lab
+  - nb_conda # Needed for changing environment in jupyter notebook
   - pip:
     - okada_wrapper
-    - pyproj
+    - chart_studio
+#- pyproj=2.0.1 # trying new ones...
 
 # In order to make this virtual environment, run: conda env create -f environment.yml
+# To update, run: conda env update -f environment.yml --prune
