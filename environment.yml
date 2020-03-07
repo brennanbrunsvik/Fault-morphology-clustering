@@ -6,7 +6,7 @@ dependencies:
   - python=3.7.1
   - numpy=1.15.4
   - pandas=0.23.4
-  - scipy=1.1.0
+  - scipy#=1.1.0 # seeing what happens if I use a more modern scipy. This is in hopes that the smoothing parameter in the scipy interpolators will work. 
   - matplotlib=3.0.2
   - plotly=3.7.0
  # - chart-studio # new, but I had to install manually...
