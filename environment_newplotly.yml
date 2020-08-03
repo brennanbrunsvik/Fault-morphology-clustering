@@ -1,0 +1,35 @@
+name: fault_morph_newplotly
+channels:
+- conda-forge
+- anaconda # haven't tested this
+- plotly
+dependencies:
+  - python=3.7.1
+  - numpy=1.15.4
+  - pandas=0.23.4
+  - scipy#=1.1.0 # seeing what happens if I use a more modern scipy. This is in hopes that the smoothing parameter in the scipy interpolators will work. 
+  - matplotlib=3.0.2
+ # - plotly=3.1.0
+ # - chart-studio # new, but I had to install manually...
+  - scikit-learn=0.22.2
+  #- cython
+  - pip=18.1
+  - pyproj=1.9.6 # moved this to the anaconda section
+  - ipykernel # Mostly needed for Jupyter Lab
+  - nb_conda # Needed for changing environment in jupyter notebook
+  - plotly #= 3.10.0 # =3.10.0
+  - chart-studio - 1.0 # 03/14
+  - pip:
+    - okada_wrapper
+    
+#- pyproj=2.0.1 # trying new ones...
+
+# In order to make this virtual environment, run: conda env create -f environment.yml
+# To update, run: conda env update -f environment.yml --prune
+
+# To make jupyter notebook/lab recognize the environment, the kernel has to be installed. run the following:
+# ipython kernel install --user --name=<any_name_for_kernel>
+
+# Below doesn't work. No urllib3 library. Maybe I should just install that.
+# pip
+#    chart_studio
