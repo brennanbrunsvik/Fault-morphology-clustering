@@ -20,7 +20,17 @@ sm.strike[nostrike] = np.nan
 sm.strike = sm.strike.astype(float)
 
 # plt.scatter(sm.Long, sm.Lat)
-pag = sm.code
+codes = sm.code
+pag = np.zeros(codes.shape, dtype = bool)
+
+codes = codes.to_numpy()
+for icode, code in enumerate(codes):
+    print(code)
+    if code[0] == 'P':
+        pag[icode] = True
+        
+sm = sm.strike.to_numpy()
+pagstrike = sm[pag]
 
 # plt.hist(sm.strike)
 # plt.show()
