@@ -1,6 +1,4 @@
-IMPORTANT: This repository is currently made public only to share between coauthors and reviewers. It isn't ready for general use yet. I will update this when the notebooks are ready. 
-
-This repository contains the supplementary code and Jupyter Notebook for the paper "Three-Dimensional Fault Morphology Obtained from Unsupervised Machine Learning of Clusters of Aftershocks." The Jupyter Notebook combines the paper and code to improve transparency and allow the reader to run their own tests. The code can be ran interactively using Binder cloud computing by clicking on the below image. Then, navigate through the "Supplementary_Jupyter_Notebook" folder and open "Supplementary_Notebook.ipynb". 
+This Jupyter Notebook combines both the writing and high level code to improve reproducibility of the work. You can view the notebook in nbviewer with interactive figures (https://bit.ly/3k7ykqg). You can also run the Notebook in the cloud using Binder by following the link below. 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brennanbrunsvik/Fault-morphology-clustering/master)
 
