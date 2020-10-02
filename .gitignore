@@ -1,0 +1,10 @@
+figures/*
+*italy-90m.grd 
+*Mapped_Fault*
+*Surface_Ruptures 
+*.jpg
+*.pdf
+*INGV_data
+*INGV_event_times
+#*LaqAlldf.final 
+#*Brennan_Aquila2009_FocMec_CMT.dat.final.mw.zenodo
