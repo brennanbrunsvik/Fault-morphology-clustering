@@ -4,3 +4,5 @@ figures/*
 *Surface_Ruptures 
 *.jpg
 *.pdf
+*INGV_data
+*INGV_event_times
